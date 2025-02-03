@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* import 'primereact/resources/themes/saga-blue/theme.css'; // テーマ */
+/* import 'primereact/resources/primereact.min.css'; // プライマリCSS */
+/* import 'primeicons/primeicons.css'; // アイコン */
+
+:root {}
+
+@media (prefers-color-scheme: dark) {
+  :root {}
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1d1d1d;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.p-dropdown-items-wrapper {
+  max-height: 30rem !important;
+}
+
+.p-dropdown-label.p-inputtext {
+  color: #fff !important;
+}
